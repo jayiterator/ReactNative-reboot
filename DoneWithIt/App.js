@@ -6,33 +6,26 @@ import {
   SafeAreaView,
   ViewComponent,
   Text,
+  Button,
 } from "react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+
+// import AppText from "./app/components/AppText";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
+import AppButton from "./app/components/Button/Button";
 
 export default function App() {
   return (
-    <View
+    //Style for testing purposes.
+    <SafeAreaView
       style={{
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        flexDirection: "row",
+        backgroundColor: "#f8f4f4",
       }}
-    >
-      <Text
-        style={{
-          fontSize: 30,
-          fontStyle: "italic",
-          fontWeight: "400",
-          color: "tomato",
-          textTransform: "capitalize",
-          textAlign: "center",
-          lineHeight: 40,
-        }}
-      >
-        I Love React Native! This is not my first React Native App! Here is more
-        Text.
-      </Text>
-    </View>
+    ></SafeAreaView>
   );
 }
