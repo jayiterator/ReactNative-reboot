@@ -14,6 +14,8 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import AppButton from "./app/components/Button/Button";
+import Card from "./app/components/Card/Card";
+import ListingDetails from "./app/screens/ListingDetails";
 
 export default function App() {
   return (
@@ -26,6 +28,14 @@ export default function App() {
         flexDirection: "row",
         backgroundColor: "#f8f4f4",
       }}
-    ></SafeAreaView>
+    >
+      {/* <Card
+        title="Red Jacket for sale!"
+        subtitle="$100"
+        image={require("./app/assets/jacket.jpg")}
+      /> */}
+      {/* <ListingDetails title="Red Jacket for sale!" subtitle="$100" /> */}
+      <ViewImageScreen />
+    </SafeAreaView>
   );
 }
