@@ -34,8 +34,8 @@ export default function App() {
         subtitle="$100"
         image={require("./app/assets/jacket.jpg")}
       /> */}
-      {/* <ListingDetails title="Red Jacket for sale!" subtitle="$100" /> */}
-      <ViewImageScreen />
+      <ListingDetails title="Red Jacket for sale!" subtitle="$100" />
+      {/* <WelcomeScreen /> */}
     </SafeAreaView>
   );
 }

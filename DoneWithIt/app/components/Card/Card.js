@@ -1,30 +1,32 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 
+import colors from "../../config/colors";
+import AppText from "../AppText";
+
 function Card(props) {
   return (
     <View style={styles.card}>
       <Image style={styles.image} source={props.image} />
-      <Text style={styles.title}>{props.title}</Text>
-      <Text style={styles.subtitle}>{props.subtitle}</Text>
+      <AppText style={styles.title}>{props.title}</AppText>
+      <AppText style={styles.subtitle}>{props.subtitle}</AppText>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: "#fff",
+    backgroundColor: colors.white,
     height: 350,
     flex: 1,
     alignSelf: "flex-start",
     flexDirection: "column",
     borderRadius: 20,
     margin: 20,
-    paddingHorizontal: 10,
     paddingBottom: 10,
+    overflow: "hidden",
   },
 
   image: {
-    resizeMode: "contain",
     justifyContent: "center",
     alignSelf: "center",
     width: "100%",
@@ -32,10 +34,14 @@ const styles = StyleSheet.create({
   },
 
   title: {
+    color: colors.black,
     paddingVertical: 10,
+    paddingLeft: 10,
   },
   subtitle: {
-    color: "green",
+    color: colors.secondary,
+    fontWeight: "bold",
+    paddingLeft: 10,
   },
 });
 

@@ -4,7 +4,7 @@ function AppButton(props) {
   return (
     <Pressable
       style={[styles.button, { backgroundColor: `${props.color}` }]}
-      onPress={() => Alert.alert("Button time!")}
+      onPress={props.onPress}
     >
       <Text style={styles.buttonText}>{props.children}</Text>
     </Pressable>
